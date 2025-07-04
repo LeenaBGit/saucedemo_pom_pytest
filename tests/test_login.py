@@ -9,7 +9,12 @@ from pages.login_page import LoginPage
 
 @pytest.fixture
 def driver():
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+    options = webdriver.ChromeOptions()
+    options.add_argument('--headless')  # Run in headless mode (for CI)
+    options.add_argument('--no-sandbox')  # Required for some CI environments
+    options.add_argument('--disable-dev-shm-usage')  # Avoid memory issues
+
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
     driver.get("https://www.saucedemo.com/")
     driver.maximize_window()
     yield driver
