@@ -25,5 +25,5 @@ jobs:
         pip install selenium pytest webdriver-manager
 
     - name: Run Pytest
-      run: |
-        PYTHONPATH=. pytest tests/
+  run: |
+    PYTHONPATH=. pytest tests/
