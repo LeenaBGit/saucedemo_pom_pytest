@@ -1,5 +1,6 @@
 # SauceDemo QA Automation (Python + Selenium + Pytest + POM)
 
+![pytest](https://github.com/LeenaBGit/saucedemo_pom_pytest/actions/workflows/pytest.yml/badge.svg)
 ![Python](https://img.shields.io/badge/python-3.10+-blue.svg)
 ![Tests](https://img.shields.io/badge/tests-passing-brightgreen)
 
