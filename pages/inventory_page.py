@@ -1,4 +1,6 @@
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 import time
 
 class InventoryPage:
@@ -17,4 +19,8 @@ class InventoryPage:
         time.sleep(1)
 
     def get_cart_count(self):
+        # Wait for the cart badge to appear
+        WebDriverWait(self.driver, 10).until(
+            EC.presence_of_element_located(self.cart_badge)
+        )
         return self.driver.find_element(*self.cart_badge).text
