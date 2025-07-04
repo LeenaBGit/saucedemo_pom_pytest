@@ -1,0 +1,33 @@
+# SauceDemo QA Automation (Python + Selenium + Pytest + POM)
+
+This project automates key user flows on [SauceDemo](https://www.saucedemo.com) using:
+
+- ✅ Python
+- ✅ Selenium WebDriver
+- ✅ Pytest for running test suites
+- ✅ Page Object Model (POM) for test structure
+
+
+## Project Structure
+saucedemo_pom_pytest/
+├── pages/ # Page Object classes
+│ ├── login_page.py
+│ └── inventory_page.py
+│
+├── tests/ # Test files using pytest
+│ ├── test_login.py
+│ └── test_cart.py
+│
+├── conftest.py # Pytest fixtures (e.g., driver setup)
+
+
+## How to Run Tests
+
+```bash
+# Run all tests
+PYTHONPATH=. pytest tests/
+
+# Run a specific test file
+PYTHONPATH=. pytest tests/test_cart.py
+
+
