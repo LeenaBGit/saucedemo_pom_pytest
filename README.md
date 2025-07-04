@@ -1,5 +1,8 @@
 # SauceDemo QA Automation (Python + Selenium + Pytest + POM)
 
+![Python](https://img.shields.io/badge/python-3.10+-blue.svg)
+![Tests](https://img.shields.io/badge/tests-passing-brightgreen)
+
 This project automates key user flows on [SauceDemo](https://www.saucedemo.com) using:
 
 - ✅ Python
