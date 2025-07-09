@@ -6,10 +6,10 @@
 
 This project automates key user flows on [SauceDemo](https://www.saucedemo.com) using:
 
-- ✅ Python
-- ✅ Selenium WebDriver
-- ✅ Pytest for running test suites
-- ✅ Page Object Model (POM) for test structure
+-  Python
+-  Selenium WebDriver
+-  Pytest for running test suites
+-  Page Object Model (POM) for test structure
 
 
 ## Project Structure
